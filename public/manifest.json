@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Chrome Extension Vue3",
+  "description": "A Chrome extension built with Vue 3 & Rsbuild.",
+  "options_page": "options.html",
+  "action": {
+    "default_title": "Chrome Extension Vue3",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["js/content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "128": "favicon.png"
+  }
+}
