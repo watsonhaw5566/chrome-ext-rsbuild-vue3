@@ -25,7 +25,6 @@ src/
     index.js         # 后台脚本入口（Service Worker）
   content/
     index.js         # 内容脚本入口
-  index.css          # 全局样式（背景、字体等）
 public/
   manifest.json      # 扩展清单（已与构建产物路径对齐）
   favicon.png        # 用作图标与页面 logo
